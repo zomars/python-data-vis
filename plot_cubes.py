@@ -5,7 +5,7 @@ y_values = [x**3 for x in x_values]
 
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.plot(x_values, y_values, linewidth=3)
+ax.scatter(x_values, y_values, cmap=plt.cm.Blues, s=10)
 
 # Set chart title and label axes.
 ax.set_title("Cube Number", fontsize=24)
